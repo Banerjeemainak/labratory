@@ -68,7 +68,7 @@ class Bank_Account
 	{
 		int choice;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Welcome: "+cust_name);
+		System.out.println("Welcome  "+cust_name);
 		System.out.println("Your ID is: "+cust_id);
 		do
 		{
