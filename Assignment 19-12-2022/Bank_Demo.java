@@ -5,13 +5,23 @@ import java.util.*;
 public class Bank_Demo {
 	public static void main(String args[])
 	{
+		String customer_name="Mainak Banerjee";
+		String customer_id="MB123";
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter your name: ");
 		String c_name=sc.nextLine();
 		System.out.print("Enter your customer id: ");
 		String c_id=sc.nextLine();
 		Bank_Account ob=new Bank_Account(c_name,c_id);
-		ob.show();
+		
+		if(((customer_id).equals(c_id))&&((customer_name).equals(c_name)))
+		{
+			ob.show();
+		}
+		else
+		{
+			System.out.println("Incorrect customer name and customer id!!!");
+		}
 	}
 
 }
