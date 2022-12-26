@@ -44,6 +44,8 @@ class Bank_Account
 		{
 			balance=balance+amount;
 			prev_Trans=amount;
+			System.out.println("Amount "+amount+" is deposited..");
+			System.out.println("Current balance is: "+balance);
 		}
 	}
 	void withdraw(float amount)
@@ -51,11 +53,14 @@ class Bank_Account
 		if(amount>balance)
 		{
 			System.out.println("You have not sufficient balance..");
+			System.out.println("Current balance is: "+balance);
 		}
 		else
 		{
 			balance=balance-amount;
 			prev_Trans=-amount;
+			System.out.println("Amount "+amount+" is withdrawn..");
+			System.out.println("Current balance is: "+balance);
 		}
 	}
 	void previous_transaction()
@@ -92,7 +97,7 @@ class Bank_Account
 			switch(choice)
 			{
 			case 1:
-				System.out.println("Your current balance is: "+balance);
+				System.out.println("Current balance is: "+balance);
 				System.out.println();
 				break;
 			case 2:
