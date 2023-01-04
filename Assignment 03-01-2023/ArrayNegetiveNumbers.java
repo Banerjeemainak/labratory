@@ -7,10 +7,10 @@ public class ArrayNegetiveNumbers {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int c=0;
+		String x="";
 		System.out.print("Enter the number of elements you want to add: ");
 		int n=sc.nextInt();
 		int arr[]=new int[n];
-		int a[]=new int[n];
 		System.out.println("Enter the elements into array: ");
 		for(int i=0;i<n;i++)
 		{
@@ -26,13 +26,18 @@ public class ArrayNegetiveNumbers {
 		{
 			if(arr[i]<0)
 			{
-				System.out.println(arr[i]);
+				x=x+" "+arr[i];
 				c=1;
 			}
 		}
 		if(c==0)
 		{
 			System.out.println("There is no negetive numbers in the array....");
+		}
+		else
+		{
+			System.out.println("Negetive numbers are: "+x);
+			
 		}
 	}
 
